@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npm create *)",
+      "Bash(cp -r C:/PROJECTS/portfolio_tmp/. C:/PROJECTS/PORTFOLIO_dev/)",
+      "Bash(rm -rf C:/PROJECTS/portfolio_tmp)",
+      "Bash(npm install *)"
+    ]
+  }
+}
