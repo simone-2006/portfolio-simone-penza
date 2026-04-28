@@ -17,13 +17,13 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-3">
       <button
         onClick={() => changeLang("it")}
-        className={`flex h-9 w-9 items-center justify-center rounded-md border transition-colors cursor-pointer ${
+        className={`flex h-7 w-7 items-center justify-center rounded-md transition-transform duration-200 cursor-pointer ${
           selected === "it"
-            ? "border-white/90 bg-white/5"
-            : "border-transparent hover:border-white/40"
+            ? "scale-120"
+            : "scale-100 hover:opacity-100 opacity-50 transition-all"
         }`}
         aria-label={t("language.italian")}
         type="button"
@@ -33,10 +33,10 @@ export default function LanguageSwitcher() {
 
       <button
         onClick={() => changeLang("en")}
-        className={`flex h-9 w-9 items-center justify-center rounded-md border transition-colors cursor-pointer ${
+        className={`flex h-7 w-7 items-center justify-center rounded-md transition-transform duration-200 cursor-pointer ${
           selected === "en"
-            ? "border-white/90 bg-white/5"
-            : "border-transparent hover:border-white/40"
+            ? "scale-120"
+            : "scale-100 hover:opacity-100 opacity-50 transition-all"
         }`}
         aria-label={t("language.english")}
         type="button"
