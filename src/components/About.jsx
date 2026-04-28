@@ -14,7 +14,7 @@ export default function About() {
       transition={{ duration: 0.7 }}
     >
       <div className="max-w-6xl mx-auto">
-        <p className="text-amber-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
+        <p className="text-cyan-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
           {t("about.eyebrow")}
         </p>
 
@@ -26,7 +26,7 @@ export default function About() {
                   SP
                 </span>
               </div>
-              <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-amber-400 rounded-full shadow-[0_0_12px_rgba(34,211,238,0.6)]" />
+              <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-cyan-400 rounded-full shadow-[0_0_12px_rgba(34,211,238,0.6)]" />
             </div>
           </div>
 

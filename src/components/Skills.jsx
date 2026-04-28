@@ -16,7 +16,7 @@ export default function Skills({ SKILL_CATEGORIES = [] }) {
       transition={{ duration: 0.7 }}
     >
       <div className="max-w-6xl mx-auto">
-        <p className="text-amber-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
+        <p className="text-cyan-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
           {t("skills.eyebrow")}
         </p>
         <h2 className="text-4xl font-bold text-slate-900 dark:text-slate-50 mb-16 leading-tight">

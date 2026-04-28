@@ -30,7 +30,7 @@ export default function Contatti({ SOCIAL_LINKS = [] }) {
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
         <div>
-          <p className="text-amber-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
+          <p className="text-cyan-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
             {t("contact.eyebrow")}
           </p>
           <h2 className="text-4xl font-bold text-slate-900 dark:text-slate-50 mb-6 leading-tight">
@@ -40,7 +40,7 @@ export default function Contatti({ SOCIAL_LINKS = [] }) {
           <div className="space-y-5">
             <a
               href="mailto:simone.penza06@gmail.com"
-              className="flex items-center gap-3 text-slate-500 hover:text-amber-400 transition-colors duration-200 group"
+              className="flex items-center gap-3 text-slate-500 hover:text-cyan-400 transition-colors duration-200 group"
             >
               <Mail size={16} />
               <span className="text-sm">simone.penza06@gmail.com</span>
@@ -50,7 +50,7 @@ export default function Contatti({ SOCIAL_LINKS = [] }) {
                 <a
                   key={label}
                   href={href}
-                  className="flex items-center gap-2 text-slate-600 hover:text-amber-400 transition-colors duration-200 text-sm"
+                  className="flex items-center gap-2 text-slate-600 hover:text-cyan-400 transition-colors duration-200 text-sm"
                 >
                   {icon}
                   <span>{label}</span>
@@ -75,7 +75,7 @@ export default function Contatti({ SOCIAL_LINKS = [] }) {
                 onChange={(e) =>
                   setFormData({ ...formData, [field]: e.target.value })
                 }
-                className="w-full bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 rounded-lg px-4 py-3 text-slate-900 dark:text-slate-100 text-sm placeholder-slate-700 focus:outline-none focus:border-amber-400/50 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-200"
+                className="w-full bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 rounded-lg px-4 py-3 text-slate-900 dark:text-slate-100 text-sm placeholder-slate-700 focus:outline-none focus:border-cyan-400/50 focus:ring-1 focus:ring-cyan-400/10 transition-colors duration-200"
                 placeholder={
                   field === "name"
                     ? t("contact.form.namePlaceholder")
@@ -95,13 +95,13 @@ export default function Contatti({ SOCIAL_LINKS = [] }) {
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              className="w-full bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 rounded-lg px-4 py-3 text-slate-900 dark:text-slate-100 text-sm placeholder-slate-700 focus:outline-none focus:border-amber-400/50 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-200 resize-none"
+              className="w-full bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 rounded-lg px-4 py-3 text-slate-900 dark:text-slate-100 text-sm placeholder-slate-700 focus:outline-none focus:border-cyan-400/50 focus:ring-1 focus:ring-cyan-400/10 transition-colors duration-200 resize-none"
               placeholder={t("contact.form.messagePlaceholder")}
             />
           </div>
           <motion.button
             type="submit"
-            className="flex items-center gap-2 px-6 py-3 bg-amber-400 text-slate-950 text-sm font-bold rounded hover:bg-amber-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)] active:scale-95"
+            className="flex items-center gap-2 px-6 py-3 bg-cyan-400 text-slate-950 text-sm font-bold rounded hover:bg-cyan-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)] active:scale-95"
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.04 }}
           >

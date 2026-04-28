@@ -22,7 +22,7 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
 
       <motion.div className="max-w-6xl mx-auto w-full grid md:grid-cols-[3fr_2fr] gap-12 items-center relative">
         <motion.div>
-          <p className="text-amber-400 font-mono text-xs mb-6 tracking-[0.3em] uppercase">
+          <p className="text-cyan-400 font-mono text-xs mb-6 tracking-[0.3em] uppercase">
             {t("hero.eyebrow")}
           </p>
           <motion.h1
@@ -52,7 +52,7 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
           >
             <button
               onClick={() => scrollTo("skills")}
-              className="px-6 py-3 bg-amber-400 text-slate-950 text-sm font-bold rounded hover:bg-amber-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.25)] active:scale-95"
+              className="px-6 py-3 bg-cyan-400 text-slate-950 text-sm font-bold rounded hover:bg-cyan-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.25)] active:scale-95"
             >
               {t("hero.cta")}
             </button>
@@ -62,7 +62,7 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="text-slate-600 hover:text-amber-400 transition-colors duration-200"
+                  className="text-slate-600 hover:text-cyan-400 transition-colors duration-200"
                 >
                   {icon}
                 </a>
@@ -87,12 +87,12 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
               <div className="absolute inset-0 rounded-full border border-slate-300 dark:border-slate-800" />
               <div className="absolute inset-5 rounded-full border border-slate-300/60 dark:border-slate-300" />
               <div className="absolute inset-10 rounded-full border border-slate-300 dark:border-slate-800/40" />
-              <div className="absolute top-3 right-8 w-2 h-2 bg-amber-400 rounded-full shadow-[0_0_8px_rgba(34,211,238,0.8)]" />
-              <div className="absolute bottom-6 left-5 w-1.5 h-1.5 bg-amber-400/40 rounded-full" />
-              <div className="absolute top-1/2 -right-1 w-1 h-1 bg-amber-400/60 rounded-full" />
+              <div className="absolute top-3 right-8 w-2 h-2 bg-cyan-400 rounded-full shadow-[0_0_8px_rgba(34,211,238,0.8)]" />
+              <div className="absolute bottom-6 left-5 w-1.5 h-1.5 bg-cyan-400/40 rounded-full" />
+              <div className="absolute top-1/2 -right-1 w-1 h-1 bg-cyan-400/60 rounded-full" />
             </motion.div>
             <div className="absolute inset-16 rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-700 flex items-center justify-center z-10">
-              <span className="text-amber-400 font-mono text-3xl font-bold">
+              <span className="text-cyan-400 font-mono text-3xl font-bold">
                 SP
               </span>
             </div>

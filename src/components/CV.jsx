@@ -17,7 +17,7 @@ export default function CV({ EXPERIENCES = [] }) {
       transition={{ duration: 0.7 }}
     >
       <div className="max-w-6xl mx-auto">
-        <p className="text-amber-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
+        <p className="text-cyan-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
           {t("cv.eyebrow")}
         </p>
         <h2 className="text-4xl font-bold text-slate-900 dark:text-slate-50 mb-16 leading-tight">
@@ -41,7 +41,7 @@ export default function CV({ EXPERIENCES = [] }) {
               </p>
               <a
                 href="#"
-                className="flex items-center justify-center gap-2 w-full px-5 py-3 bg-amber-400 text-slate-950 text-sm font-bold rounded hover:bg-amber-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)] active:scale-95"
+                className="flex items-center justify-center gap-2 w-full px-5 py-3 bg-cyan-400 text-slate-950 text-sm font-bold rounded hover:bg-cyan-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)] active:scale-95"
               >
                 <Download size={15} />
                 {t("cv.downloadButton")}

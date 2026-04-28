@@ -50,7 +50,7 @@ export default function Header({ NAV_ITEMS = [] }) {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <button
           onClick={() => scrollTo("hero")}
-          className="text-amber-400 font-mono text-lg font-semibold tracking-tight select-none hover:text-amber-300 transition-colors"
+          className="text-cyan-400 font-mono text-lg font-semibold tracking-tight select-none hover:text-cyan-300 transition-colors"
         >
           SP<span className="text-slate-600">.</span>
         </button>
@@ -60,9 +60,9 @@ export default function Header({ NAV_ITEMS = [] }) {
             <button
               key={id}
               onClick={() => scrollTo(id)}
-              className={`text-sm tracking-wide transition-colors duration-200 relative after:absolute after:bottom-0.5 after:left-0 after:h-px after:bg-amber-400 after:transition-all after:duration-200 ${
+              className={`text-sm tracking-wide transition-colors duration-200 relative after:absolute after:bottom-0.5 after:left-0 after:h-px after:bg-cyan-400 after:transition-all after:duration-200 ${
                 activeSection === id
-                  ? "text-amber-400 after:w-full"
+                  ? "text-cyan-400 after:w-full"
                   : "text-slate-400 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-200 after:w-0"
               }`}
             >
@@ -114,7 +114,7 @@ export default function Header({ NAV_ITEMS = [] }) {
               onClick={() => scrollTo(id)}
               className={`text-left text-sm tracking-wide transition-colors duration-200 ${
                 activeSection === id
-                  ? "text-amber-400"
+                  ? "text-cyan-400"
                   : "text-slate-400 hover:text-slate-900 dark:text-slate-100"
               }`}
             >

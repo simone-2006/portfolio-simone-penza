@@ -22,7 +22,7 @@ export default function Footer({ SOCIAL_LINKS }) {
               key={label}
               href={href}
               aria-label={label}
-              className="text-slate-500 hover:text-amber-400 transition-colors duration-200"
+              className="text-slate-500 hover:text-cyan-400 transition-colors duration-200"
             >
               {icon}
             </a>

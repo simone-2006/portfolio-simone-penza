@@ -28,7 +28,7 @@ import Footer from "./components/Footer.jsx";
 
 const SKILL_ICONS = {
   frontend: [
-    { name: "HTML", icon: <FaHtml5 size={15} />, color: "amber" },
+    { name: "HTML", icon: <FaHtml5 size={15} />, color: "cyan" },
     { name: "CSS", icon: <FaCss3Alt size={15} />, color: "lightblue" },
     {
       name: "JavaScript",
