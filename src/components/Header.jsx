@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import useDarkMode from "../hooks/DarkMode";
 import LanguageSwitcher from "./UI/LanguageSwitcher.jsx";
@@ -9,6 +10,7 @@ export default function Header({ NAV_ITEMS = [] }) {
   const [activeSection, setActiveSection] = useState("hero");
   const [darkMode, setDarkMode] = useDarkMode();
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const observers = [];
@@ -31,7 +33,7 @@ export default function Header({ NAV_ITEMS = [] }) {
     });
 
     return () => observers.forEach((observer) => observer.disconnect());
-  }, []);
+  }, [NAV_ITEMS]);
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -48,7 +50,7 @@ export default function Header({ NAV_ITEMS = [] }) {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <button
           onClick={() => scrollTo("hero")}
-          className="text-cyan-400 font-mono text-lg font-semibold tracking-tight select-none hover:text-cyan-300 transition-colors"
+          className="text-amber-400 font-mono text-lg font-semibold tracking-tight select-none hover:text-amber-300 transition-colors"
         >
           SP<span className="text-slate-600">.</span>
         </button>
@@ -58,25 +60,26 @@ export default function Header({ NAV_ITEMS = [] }) {
             <button
               key={id}
               onClick={() => scrollTo(id)}
-              className={`text-sm tracking-wide transition-colors duration-200 relative after:absolute after:bottom-0.5 after:left-0 after:h-px after:bg-cyan-400 after:transition-all after:duration-200 ${
+              className={`text-sm tracking-wide transition-colors duration-200 relative after:absolute after:bottom-0.5 after:left-0 after:h-px after:bg-amber-400 after:transition-all after:duration-200 ${
                 activeSection === id
-                  ? "text-cyan-400 after:w-full"
+                  ? "text-amber-400 after:w-full"
                   : "text-slate-400 hover:text-slate-900 dark:text-slate-100 after:w-0"
               }`}
             >
-              {label}
+              {t(label)}
             </button>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2 hidden md:inline-flex">
-          <LanguageSwitcher></LanguageSwitcher>
+        <div className="hidden md:inline-flex items-center gap-2">
+          <LanguageSwitcher />
 
           <button
             onClick={() => setDarkMode((prev) => !prev)}
-            className="hidden md:inline-flex items-center justify-center p-1 rounded-mdtext-slate-500 dark:text-slate-100 cursor-pointer transition-colors duration-200"
-            aria-label="Toggle dark mode"
-            title="Cambia tema"
+            className="hidden md:inline-flex items-center justify-center p-1 rounded-md text-slate-500 dark:text-slate-100 cursor-pointer transition-colors duration-200"
+            aria-label={t("theme.toggle")}
+            title={t("theme.toggle")}
+            type="button"
           >
             {darkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
@@ -85,7 +88,8 @@ export default function Header({ NAV_ITEMS = [] }) {
         <button
           className="md:hidden text-slate-400 hover:text-slate-900 dark:text-slate-100 transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          aria-label={t("menu.toggle")}
+          type="button"
         >
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -95,12 +99,13 @@ export default function Header({ NAV_ITEMS = [] }) {
         <div className="md:hidden border-t border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-950/95 px-6 py-4 flex flex-col gap-4">
           <button
             onClick={() => setDarkMode((prev) => !prev)}
-            className="flex items-center justify-between gap-2 px-4 py-3 border border-slate-200 dark:border-slate-800 rounded-lgtext-slate-500 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors duration-200"
-            aria-label="Toggle dark mode"
+            className="flex items-center justify-between gap-2 px-4 py-3 border border-slate-200 dark:border-slate-800 rounded-lg text-slate-500 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors duration-200"
+            aria-label={t("theme.toggle")}
+            type="button"
           >
             <span className="flex items-center gap-2">
               {darkMode ? <Sun size={18} /> : <Moon size={18} />}
-              {darkMode ? "Light mode" : "Dark mode"}
+              {darkMode ? t("theme.light") : t("theme.dark")}
             </span>
           </button>
           {NAV_ITEMS.map(({ id, label }) => (
@@ -109,14 +114,14 @@ export default function Header({ NAV_ITEMS = [] }) {
               onClick={() => scrollTo(id)}
               className={`text-left text-sm tracking-wide transition-colors duration-200 ${
                 activeSection === id
-                  ? "text-cyan-400"
+                  ? "text-amber-400"
                   : "text-slate-400 hover:text-slate-900 dark:text-slate-100"
               }`}
             >
-              {label}
+              {t(label)}
             </button>
           ))}
-          <LanguageSwitcher></LanguageSwitcher>
+          <LanguageSwitcher />
         </div>
       )}
     </motion.header>

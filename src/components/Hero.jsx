@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Hero({ SOCIAL_LINKS = [] }) {
+  const { t } = useTranslation();
+
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <motion.section
       id="hero"
@@ -15,8 +22,8 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
 
       <motion.div className="max-w-6xl mx-auto w-full grid md:grid-cols-[3fr_2fr] gap-12 items-center relative">
         <motion.div>
-          <p className="text-cyan-400 font-mono text-xs mb-6 tracking-[0.3em] uppercase">
-            Ciao, sono
+          <p className="text-amber-400 font-mono text-xs mb-6 tracking-[0.3em] uppercase">
+            {t("hero.eyebrow")}
           </p>
           <motion.h1
             className="text-7xl md:text-9xl font-bold leading-none tracking-tighter mb-4"
@@ -30,12 +37,10 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
             <span className="text-slate-600 dark:text-slate-500">Penza</span>
           </motion.h1>
           <p className="text-xl text-slate-400 mb-2 font-light tracking-wide">
-            Developer
+            {t("hero.role")}
           </p>
           <p className="text-slate-500 text-base leading-relaxed mb-10 max-w-sm">
-            Sviluppo soluzioni digitali con un approccio moderno e pragmatico.
-            Amo il codice pulito, le interfacce intuitive e le performance
-            ottimali.
+            {t("hero.description")}
           </p>
 
           <motion.div
@@ -47,9 +52,9 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
           >
             <button
               onClick={() => scrollTo("skills")}
-              className="px-6 py-3 bg-cyan-400 text-slate-950 text-sm font-bold rounded hover:bg-cyan-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.25)] active:scale-95"
+              className="px-6 py-3 bg-amber-400 text-slate-950 text-sm font-bold rounded hover:bg-amber-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.25)] active:scale-95"
             >
-              Scopri di più
+              {t("hero.cta")}
             </button>
             <div className="flex items-center gap-4">
               {SOCIAL_LINKS.map(({ label, icon, href }) => (
@@ -57,7 +62,7 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="text-slate-600 hover:text-cyan-400 transition-colors duration-200"
+                  className="text-slate-600 hover:text-amber-400 transition-colors duration-200"
                 >
                   {icon}
                 </a>
@@ -74,7 +79,6 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           <motion.div className="relative w-64 h-64 flex items-center justify-center">
-            {/* Anelli ruotanti */}
             <motion.div
               className="absolute inset-0"
               animate={{ rotate: [0, 360] }}
@@ -83,13 +87,12 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
               <div className="absolute inset-0 rounded-full border border-slate-300 dark:border-slate-800" />
               <div className="absolute inset-5 rounded-full border border-slate-300/60 dark:border-slate-300" />
               <div className="absolute inset-10 rounded-full border border-slate-300 dark:border-slate-800/40" />
-              <div className="absolute top-3 right-8 w-2 h-2 bg-cyan-400 rounded-full shadow-[0_0_8px_rgba(34,211,238,0.8)]" />
-              <div className="absolute bottom-6 left-5 w-1.5 h-1.5 bg-cyan-400/40 rounded-full" />
-              <div className="absolute top-1/2 -right-1 w-1 h-1 bg-cyan-400/60 rounded-full" />
+              <div className="absolute top-3 right-8 w-2 h-2 bg-amber-400 rounded-full shadow-[0_0_8px_rgba(34,211,238,0.8)]" />
+              <div className="absolute bottom-6 left-5 w-1.5 h-1.5 bg-amber-400/40 rounded-full" />
+              <div className="absolute top-1/2 -right-1 w-1 h-1 bg-amber-400/60 rounded-full" />
             </motion.div>
-            {/* Cerchio centrale statico */}
             <div className="absolute inset-16 rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-700 flex items-center justify-center z-10">
-              <span className="text-cyan-400 font-mono text-3xl font-bold">
+              <span className="text-amber-400 font-mono text-3xl font-bold">
                 SP
               </span>
             </div>
@@ -97,9 +100,9 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
         </motion.div>
       </motion.div>
 
-      <div className="hidden md:flex flex-col items-center gap-2text-slate-500 absolute bottom-10 left-1/2 -translate-x-1/2">
+      <div className="hidden md:flex flex-col items-center gap-2 text-slate-500 absolute bottom-10 left-1/2 -translate-x-1/2">
         <span className="text-xs font-mono tracking-[0.25em] uppercase">
-          scroll
+          {t("hero.scroll")}
         </span>
         <ArrowDown size={13} className="animate-bounce" />
       </div>

@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "cv": "Resume",
+    "contacts": "Contact"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "dark": "Dark mode",
+    "light": "Light mode"
+  },
+  "menu": {
+    "toggle": "Toggle menu"
+  },
+  "language": {
+    "italian": "Switch to Italian",
+    "english": "Switch to English"
+  },
+  "hero": {
+    "eyebrow": "Hi, I am",
+    "role": "Developer",
+    "description": "I build digital solutions with a modern, pragmatic approach. I care about clean code, intuitive interfaces, and strong performance.",
+    "cta": "Find out more",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Who I am",
+    "text": "I am a developer with a strong passion for the web, polished interfaces, and projects built with care for detail. I enjoy working on digital experiences that feel clear, performant, and grounded, combining aesthetics, logic, and usability into solutions that genuinely serve the people who use them."
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databaseDevops": "Database & DevOps"
+    }
+  },
+  "cv": {
+    "eyebrow": "Resume",
+    "title": "Experience",
+    "downloadLabel": "Download",
+    "downloadDescription": "Download the full resume.",
+    "downloadButton": "Download resume",
+    "experiences": [
+      {
+        "period": "October 2025 - Present",
+        "role": "IT Technician and Web Developer (Desio MB)",
+        "desc": "At Greenchemicals SRL, I work as an IT Technician and Web Developer, actively contributing to the company's growth in the technology area. I manage full technical support for employees, covering hardware, software, and network configuration issues, as well as the setup and maintenance of the company's IT infrastructure. At the same time, I am responsible for developing an advanced internal CRM system designed to streamline business processes. The platform enables complete customer management, sales visit tracking with geolocation, an intelligent reminder system, and a dedicated product search area. This section integrates data from the company's management system, including updated quotes, stock availability, pending orders, and job status. The stack includes HTML, PHP, JavaScript, Node.js, Tailwind CSS, SQL Server, and Docker. This experience is allowing me to deepen my understanding of professional software development while exploring modern technologies and frameworks such as React and Vite.js. Looking ahead, my goal is to guide the CRM toward a more modern and scalable architecture through a reactive, high-performance frontend built with React and Vite.js, together with Supabase integration for a more modern, secure, and elegant data layer. That evolution would bring a significant improvement in performance, maintainability, and overall system quality."
+      },
+      {
+        "period": "September 2025",
+        "role": "Web Developer Intern (Brugherio MB)",
+        "desc": "During my internship at Voome Srl, I developed a web application integrated with a database that allowed users to write and execute JavaScript commands in real time with a user management system. This experience helped me strengthen the skills I had built during school, apply them in a real professional environment, and learn new development methodologies and industry best practices. Tech stack: HTML, JavaScript, PHP, CSS, and MySQL."
+      },
+      {
+        "period": "2020 - 2025",
+        "role": "Computer Science Student at ITIS Pino Hensemberger (Monza MB)",
+        "desc": "During my school years, I learned the foundations of computer science and programming by building projects in languages such as C++, Python, and Java. I also developed web skills by creating simple websites and applications with HTML, CSS, and PHP backends connected to MySQL databases. This experience gave me a solid theoretical and practical foundation, strengthened my passion for software development, and pushed me to keep exploring the field further."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "My contacts",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your@email.com",
+      "messagePlaceholder": "What do you need help with?",
+      "submit": "Send message",
+      "sent": "Message sent"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Simone Penza"
+  }
+}

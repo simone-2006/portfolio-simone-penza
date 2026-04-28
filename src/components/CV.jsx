@@ -1,11 +1,12 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 import { Download } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
 import Experience from "./UI/Experience";
 
 export default function CV({ EXPERIENCES = [] }) {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       id="cv"
@@ -16,11 +17,11 @@ export default function CV({ EXPERIENCES = [] }) {
       transition={{ duration: 0.7 }}
     >
       <div className="max-w-6xl mx-auto">
-        <p className="text-cyan-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
-          Curriculum
+        <p className="text-amber-400 font-mono text-xs tracking-[0.3em] uppercase mb-4">
+          {t("cv.eyebrow")}
         </p>
         <h2 className="text-4xl font-bold text-slate-900 dark:text-slate-50 mb-16 leading-tight">
-          Esperienza
+          {t("cv.title")}
         </h2>
 
         <div className="grid md:grid-cols-[2fr_1fr] gap-16 items-start">
@@ -33,17 +34,17 @@ export default function CV({ EXPERIENCES = [] }) {
           <div className="sticky top-24">
             <div className="border border-slate-300 dark:border-slate-800 rounded-xl p-6 bg-slate-100 dark:bg-slate-900/30">
               <p className="text-slate-500 text-xs font-mono tracking-widest uppercase mb-3">
-                Download
+                {t("cv.downloadLabel")}
               </p>
               <p className="text-slate-400 text-sm mb-6 leading-relaxed">
-                Scarica il CV completo.
+                {t("cv.downloadDescription")}
               </p>
               <a
                 href="#"
-                className="flex items-center justify-center gap-2 w-full px-5 py-3 bg-cyan-400 text-slate-950 text-sm font-bold rounded hover:bg-cyan-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)] active:scale-95"
+                className="flex items-center justify-center gap-2 w-full px-5 py-3 bg-amber-400 text-slate-950 text-sm font-bold rounded hover:bg-amber-300 transition-all duration-200 hover:shadow-[0_0_24px_rgba(34,211,238,0.2)] active:scale-95"
               >
                 <Download size={15} />
-                Scarica CV
+                {t("cv.downloadButton")}
               </a>
             </div>
           </div>

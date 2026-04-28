@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Io",
+    "skills": "Skills",
+    "cv": "CV",
+    "contacts": "Contatti"
+  },
+  "theme": {
+    "toggle": "Cambia tema",
+    "dark": "Tema scuro",
+    "light": "Tema chiaro"
+  },
+  "menu": {
+    "toggle": "Apri menu"
+  },
+  "language": {
+    "italian": "Passa alla lingua italiana",
+    "english": "Passa alla lingua inglese"
+  },
+  "hero": {
+    "eyebrow": "Ciao, sono",
+    "role": "Developer",
+    "description": "Sviluppo soluzioni digitali con un approccio moderno e pragmatico. Amo il codice pulito, le interfacce intuitive e le performance ottimali.",
+    "cta": "Scopri di piu",
+    "scroll": "Scorri"
+  },
+  "about": {
+    "eyebrow": "Io",
+    "title": "Chi sono",
+    "text": "Sono uno sviluppatore con una forte passione per il web, le interfacce curate e i progetti costruiti con attenzione ai dettagli. Mi piace lavorare su esperienze digitali chiare, performanti e concrete, unendo estetica, logica e usabilita in soluzioni che abbiano davvero senso per chi le usa."
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Competenze",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databaseDevops": "Database & DevOps"
+    }
+  },
+  "cv": {
+    "eyebrow": "Curriculum",
+    "title": "Esperienza",
+    "downloadLabel": "Download",
+    "downloadDescription": "Scarica il CV completo.",
+    "downloadButton": "Scarica CV",
+    "experiences": [
+      {
+        "period": "Ottobre 2025 - Presente",
+        "role": "IT Technician e Web Developer (Desio MB)",
+        "desc": "Presso Greenchemicals SRL ricopro il ruolo di IT Technician e Web Developer, contribuendo attivamente alla crescita dell'azienda nel settore informatico. Mi occupo della gestione e del supporto tecnico completo ai dipendenti, intervenendo su problematiche hardware, software e configurazioni di rete, oltre alla configurazione e manutenzione delle infrastrutture IT aziendali. Parallelamente, sono responsabile dello sviluppo di un sistema CRM interno avanzato, progettato per ottimizzare la gestione dei processi aziendali. Il gestionale consente una gestione completa dei clienti, la tracciatura delle visite commerciali con visualizzazione geolocalizzata, un sistema di reminder intelligenti e una sezione dedicata alla ricerca prodotti. Quest'ultima integra dati provenienti dal gestionale aziendale, tra cui quotazioni aggiornate, disponibilita di magazzino, ordini pendenti e stato delle commesse. Lo stack tecnologico utilizzato comprende HTML, PHP, JavaScript, Node.js, Tailwind CSS, SQL Server e Docker. Questa esperienza mi sta permettendo di approfondire concretamente il mondo della programmazione professionale, portandomi a esplorare tecnologie e framework moderni come React e Vite.js. In prospettiva, il mio obiettivo e guidare l'evoluzione del CRM verso un'architettura piu moderna e scalabile, attraverso lo sviluppo di un frontend reattivo e performante basato su React e Vite.js, e l'integrazione di Supabase per una gestione del database piu moderna, sicura ed elegante. Questo rappresenterebbe un significativo miglioramento in termini di performance, manutenibilita e qualita complessiva del sistema."
+      },
+      {
+        "period": "Settembre 2025",
+        "role": "Sviluppatore Web (Stage, Brugherio MB)",
+        "desc": "Durante il mio stage presso Voome Srl, ho sviluppato un'applicazione web integrata con un database, che consentiva agli utenti di inserire ed eseguire comandi JavaScript in tempo reale con un sistema di gestione utenti. Questa esperienza mi ha permesso di consolidare le competenze acquisite durante il percorso scolastico, applicandole in un contesto professionale reale, oltre ad apprendere nuove metodologie di sviluppo e best practice del settore. Stack tecnologico: HTML, JavaScript, PHP, CSS e MySQL."
+      },
+      {
+        "period": "2020 - 2025",
+        "role": "Studente di informatica presso ITIS Pino Hensemberger (Monza MB)",
+        "desc": "Durante il mio percorso scolastico ho imparato le basi dell'informatica e della programmazione, sviluppando progetti in vari linguaggi come C++, Python e Java. Ho acquisito anche competenze in ambito web, realizzando siti e applicazioni semplici con HTML, CSS e backend PHP con database MySQL. Questa esperienza mi ha fornito una solida base teorica e pratica, stimolando la mia passione per lo sviluppo software e spingendomi a esplorare ulteriormente il mondo della programmazione."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contatti",
+    "title": "I miei contatti",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "message": "Messaggio",
+      "namePlaceholder": "Il tuo nome",
+      "emailPlaceholder": "tua@email.com",
+      "messagePlaceholder": "Di cosa hai bisogno?",
+      "submit": "Invia messaggio",
+      "sent": "Messaggio inviato"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Simone Penza"
+  }
+}

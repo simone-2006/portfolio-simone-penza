@@ -6,7 +6,7 @@ export default function Experience({ exp }) {
       </p>
 
       <div className="flex items-center gap-2">
-        <div className="bg-cyan-500 w-2 h-2 rounded-full"></div>
+        <div className="bg-amber-500 w-2 h-2 rounded-full"></div>
         <h3 className="text-slate-900 dark:text-slate-100 font-semibold text-base mb-0.5">
           {exp.role}
         </h3>
@@ -18,7 +18,7 @@ export default function Experience({ exp }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p className="text-cyan-400/70 text-sm mb-2">{exp.company}</p>
+        <p className="text-amber-400/70 text-sm mb-2">{exp.company}</p>
       </a>
 
       <p className="text-slate-500 text-sm leading-relaxed">{exp.desc}</p>
