@@ -21,7 +21,7 @@ export default function Experience({ exp }) {
         <p className="text-cyan-400/70 text-sm mb-2">{exp.company}</p>
       </a>
 
-      <p className="text-slate-300 text-sm leading-relaxed">{exp.desc}</p>
+      <p className="text-slate-500 text-sm leading-relaxed">{exp.desc}</p>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 
 import useDarkMode from "../hooks/DarkMode";
+import LanguageSwitcher from "./UI/LanguageSwitcher.jsx";
 
 export default function Header({ NAV_ITEMS = [] }) {
   const [activeSection, setActiveSection] = useState("hero");
@@ -68,14 +69,18 @@ export default function Header({ NAV_ITEMS = [] }) {
           ))}
         </nav>
 
-        <button
-          onClick={() => setDarkMode((prev) => !prev)}
-          className="hidden md:inline-flex items-center justify-center p-1 rounded-md text-slate-300 dark:text-slate-100 cursor-pointer transition-colors duration-200"
-          aria-label="Toggle dark mode"
-          title="Cambia tema"
-        >
-          {darkMode ? <Sun size={18} /> : <Moon size={18} />}
-        </button>
+        <div className="flex items-center gap-2 hidden md:inline-flex">
+          <LanguageSwitcher></LanguageSwitcher>
+
+          <button
+            onClick={() => setDarkMode((prev) => !prev)}
+            className="hidden md:inline-flex items-center justify-center p-1 rounded-mdtext-slate-500 dark:text-slate-100 cursor-pointer transition-colors duration-200"
+            aria-label="Toggle dark mode"
+            title="Cambia tema"
+          >
+            {darkMode ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+        </div>
 
         <button
           className="md:hidden text-slate-400 hover:text-slate-900 dark:text-slate-100 transition-colors"
@@ -90,7 +95,7 @@ export default function Header({ NAV_ITEMS = [] }) {
         <div className="md:hidden border-t border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-950/95 px-6 py-4 flex flex-col gap-4">
           <button
             onClick={() => setDarkMode((prev) => !prev)}
-            className="flex items-center justify-between gap-2 px-4 py-3 border border-slate-200 dark:border-slate-800 rounded-lg text-slate-300 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors duration-200"
+            className="flex items-center justify-between gap-2 px-4 py-3 border border-slate-200 dark:border-slate-800 rounded-lgtext-slate-500 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors duration-200"
             aria-label="Toggle dark mode"
           >
             <span className="flex items-center gap-2">
@@ -111,6 +116,7 @@ export default function Header({ NAV_ITEMS = [] }) {
               {label}
             </button>
           ))}
+          <LanguageSwitcher></LanguageSwitcher>
         </div>
       )}
     </motion.header>

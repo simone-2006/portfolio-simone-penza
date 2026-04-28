@@ -13,7 +13,7 @@ export default function Footer({ SOCIAL_LINKS }) {
       transition={{ duration: 0.7, delay: 0.2 }}
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <span className="text-slate-300 text-sm font-mono">
+        <span className="text-slate-500 text-sm font-mono">
           © 2026 Simone Penza
         </span>
         <div className="flex items-center gap-5">
@@ -22,7 +22,7 @@ export default function Footer({ SOCIAL_LINKS }) {
               key={label}
               href={href}
               aria-label={label}
-              className="text-slate-300 hover:text-cyan-400 transition-colors duration-200"
+              className="text-slate-500 hover:text-cyan-400 transition-colors duration-200"
             >
               {icon}
             </a>

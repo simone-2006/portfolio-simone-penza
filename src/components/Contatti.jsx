@@ -39,7 +39,7 @@ export default function Contatti({ SOCIAL_LINKS = [] }) {
           <div className="space-y-5">
             <a
               href="mailto:simone.penza06@gmail.com"
-              className="flex items-center gap-3 text-slate-300 hover:text-cyan-400 transition-colors duration-200 group"
+              className="flex items-center gap-3text-slate-500 hover:text-cyan-400 transition-colors duration-200 group"
             >
               <Mail size={16} />
               <span className="text-sm">simone.penza06@gmail.com</span>

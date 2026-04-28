@@ -27,12 +27,12 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
           >
             <span className="text-slate-900 dark:text-slate-50">Simone</span>
             <br />
-            <span className="text-slate-600 dark:text-slate-300">Penza</span>
+            <span className="text-slate-600 dark:text-slate-500">Penza</span>
           </motion.h1>
           <p className="text-xl text-slate-400 mb-2 font-light tracking-wide">
             Developer
           </p>
-          <p className="text-slate-300 text-base leading-relaxed mb-10 max-w-sm">
+          <p className="text-slate-500 text-base leading-relaxed mb-10 max-w-sm">
             Sviluppo soluzioni digitali con un approccio moderno e pragmatico.
             Amo il codice pulito, le interfacce intuitive e le performance
             ottimali.
@@ -97,7 +97,7 @@ export default function Hero({ SOCIAL_LINKS = [] }) {
         </motion.div>
       </motion.div>
 
-      <div className="hidden md:flex flex-col items-center gap-2 text-slate-300 absolute bottom-10 left-1/2 -translate-x-1/2">
+      <div className="hidden md:flex flex-col items-center gap-2text-slate-500 absolute bottom-10 left-1/2 -translate-x-1/2">
         <span className="text-xs font-mono tracking-[0.25em] uppercase">
           scroll
         </span>

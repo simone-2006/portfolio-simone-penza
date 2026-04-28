@@ -32,7 +32,7 @@ export default function CV({ EXPERIENCES = [] }) {
 
           <div className="sticky top-24">
             <div className="border border-slate-300 dark:border-slate-800 rounded-xl p-6 bg-slate-100 dark:bg-slate-900/30">
-              <p className="text-slate-300 text-xs font-mono tracking-widest uppercase mb-3">
+              <p className="text-slate-500 text-xs font-mono tracking-widest uppercase mb-3">
                 Download
               </p>
               <p className="text-slate-400 text-sm mb-6 leading-relaxed">

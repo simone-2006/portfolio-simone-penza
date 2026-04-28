@@ -35,6 +35,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { BsFiletypeJsx } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import "flag-icons/css/flag-icons.min.css";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -129,7 +130,6 @@ const NAV_ITEMS = [
 ];
 
 export default function Portfolio() {
-
   return (
     <motion.div
       className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen font-sans antialiased transition-colors"
@@ -145,7 +145,7 @@ export default function Portfolio() {
 
       {/* ── ABOUT ── */}
       <About />
-      
+
       {/* ── SKILLS ── */}
       <Skills SKILL_CATEGORIES={SKILL_CATEGORIES} />
 
@@ -153,10 +153,10 @@ export default function Portfolio() {
       <CV EXPERIENCES={EXPERIENCES} />
 
       {/* ── CONTACT ── */}
-      <Contatti SOCIAL_LINKS={SOCIAL_LINKS}/>
+      <Contatti SOCIAL_LINKS={SOCIAL_LINKS} />
 
       {/* ── FOOTER ── */}
-      <Footer SOCIAL_LINKS={SOCIAL_LINKS}/>
+      <Footer SOCIAL_LINKS={SOCIAL_LINKS} />
     </motion.div>
   );
 }
