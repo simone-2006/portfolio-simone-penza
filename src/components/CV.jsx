@@ -31,7 +31,7 @@ export default function CV({ EXPERIENCES = [] }) {
             ))}
           </div>
 
-          <div className="sticky top-24">
+          {/* <div className="sticky top-24">
             <div className="border border-slate-300 dark:border-slate-800 rounded-xl p-6 bg-slate-100 dark:bg-slate-900/30">
               <p className="text-slate-500 text-xs font-mono tracking-widest uppercase mb-3">
                 {t("cv.downloadLabel")}
@@ -47,7 +47,7 @@ export default function CV({ EXPERIENCES = [] }) {
                 {t("cv.downloadButton")}
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </motion.section>
