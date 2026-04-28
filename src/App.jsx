@@ -26,7 +26,7 @@ import CV from "./components/CV.jsx";
 import Contatti from "./components/Contatti.jsx";
 import Footer from "./components/Footer.jsx";
 
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react"
 
 const SKILL_ICONS = {
   frontend: [
