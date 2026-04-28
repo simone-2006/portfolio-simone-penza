@@ -60,7 +60,7 @@ export default function Contatti({ SOCIAL_LINKS = [] }) {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-5">
+        {/* <form onSubmit={handleSubmit} className="space-y-5">
           {["name", "email"].map((field) => (
             <div key={field}>
               <label className="block text-slate-600 text-xs font-mono tracking-[0.2em] uppercase mb-2">
@@ -114,7 +114,7 @@ export default function Contatti({ SOCIAL_LINKS = [] }) {
               </>
             )}
           </motion.button>
-        </form>
+        </form> */}
       </div>
     </motion.section>
   );
