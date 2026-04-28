@@ -10,7 +10,7 @@ export default function CV({ EXPERIENCES = [] }) {
   return (
     <motion.section
       id="cv"
-      className="py-32 px-6 bg-slate-100 dark:bg-slate-900/30"
+      className="py-28 px-6 bg-slate-100 dark:bg-slate-900/30"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}

@@ -7,7 +7,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="py-32 px-6"
+      className="py-28 px-6"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}

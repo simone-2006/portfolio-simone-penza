@@ -50,7 +50,7 @@ export default function Header({ NAV_ITEMS = [] }) {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <button
           onClick={() => scrollTo("hero")}
-          className="text-cyan-400 font-mono text-lg font-semibold tracking-tight select-none hover:text-cyan-300 transition-colors"
+          className="text-cyan-400 font-mono text-lg font-semibold tracking-tight select-none hover:text-cyan-300 transition-colors cursor-pointer"
         >
           SP<span className="text-slate-600">.</span>
         </button>
@@ -86,7 +86,7 @@ export default function Header({ NAV_ITEMS = [] }) {
         </div>
 
         <button
-          className="md:hidden text-slate-400 hover:text-slate-900 dark:text-slate-100 transition-colors"
+          className="md:hidden text-slate-400 hover:text-slate-500 dark:text-slate-100 transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={t("menu.toggle")}
           type="button"

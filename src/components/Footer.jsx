@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer({ SOCIAL_LINKS }) {
   const { t } = useTranslation();
@@ -16,6 +17,13 @@ export default function Footer({ SOCIAL_LINKS }) {
         <span className="text-slate-500 text-sm font-mono">
           {t("footer.copyright")}
         </span>
+        <span className="text-slate-500 text-sm flex items-center gap-1">
+          {t("footer.githubproject")}
+          <a className="border rounded-md p-1 cursor-pointer" href="https://github.com/simone-2006/portfolio-simone-penza">
+            <FaGithub/>
+          </a>
+        </span>
+
         <div className="flex items-center gap-5">
           {SOCIAL_LINKS.map(({ label, icon, href }) => (
             <a

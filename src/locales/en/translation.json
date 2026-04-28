@@ -78,6 +78,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2026 Simone Penza"
+    "copyright": "© 2026 Simone Penza",
+    "githubproject": "View this project on GitHub: "
   }
 }
