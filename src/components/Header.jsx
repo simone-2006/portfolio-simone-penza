@@ -63,7 +63,7 @@ export default function Header({ NAV_ITEMS = [] }) {
               className={`text-sm tracking-wide transition-colors duration-200 relative after:absolute after:bottom-0.5 after:left-0 after:h-px after:bg-amber-400 after:transition-all after:duration-200 ${
                 activeSection === id
                   ? "text-amber-400 after:w-full"
-                  : "text-slate-400 hover:text-slate-900 dark:text-slate-100 after:w-0"
+                  : "text-slate-400 hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-200 after:w-0"
               }`}
             >
               {t(label)}
