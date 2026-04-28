@@ -26,6 +26,8 @@ import CV from "./components/CV.jsx";
 import Contatti from "./components/Contatti.jsx";
 import Footer from "./components/Footer.jsx";
 
+import { Analytics } from "@vercel/analytics/next";
+
 const SKILL_ICONS = {
   frontend: [
     { name: "HTML", icon: <FaHtml5 size={15} />, color: "orange" },
@@ -123,6 +125,7 @@ export default function Portfolio() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.7 }}
     >
+      <Analytics />
       <Header NAV_ITEMS={navItems} />
       <Hero SOCIAL_LINKS={SOCIAL_LINKS} />
       <About />
