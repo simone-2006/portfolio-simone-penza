@@ -17,7 +17,7 @@ export default function Footer({ SOCIAL_LINKS }) {
         <span className="text-slate-500 text-sm font-mono">
           {t("footer.copyright")}
         </span>
-        <span className="text-slate-500 text-sm flex items-center gap-1">
+        <span className="text-slate-500 text-sm flex items-center gap-3">
           {t("footer.githubproject")}
           <a className="border rounded-md p-1 cursor-pointer" href="https://github.com/simone-2006/portfolio-simone-penza">
             <FaGithub/>

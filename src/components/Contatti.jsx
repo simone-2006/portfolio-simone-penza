@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Send } from "lucide-react";
+import { FaPhone } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 
 export default function Contatti({ SOCIAL_LINKS = [] }) {
@@ -44,6 +45,12 @@ export default function Contatti({ SOCIAL_LINKS = [] }) {
             >
               <Mail size={16} />
               <span className="text-sm">simone.penza06@gmail.com</span>
+            </a>
+            <a
+              className="flex items-center gap-3 text-slate-500 hover:text-cyan-400 transition-colors duration-200 group"
+            >
+              <FaPhone size={16} />
+              <span className="text-sm">+39 370 136 4070</span>
             </a>
             <div className="flex items-center gap-5 pt-1">
               {SOCIAL_LINKS.map(({ label, icon, href }) => (
