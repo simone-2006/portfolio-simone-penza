@@ -7,7 +7,7 @@ export default function Footer({ SOCIAL_LINKS }) {
 
   return (
     <motion.footer
-      className="border-t border-slate-300/60 dark:border-slate-300 dark:border-slate-300/60 dark:border-slate-800/60 py-8 px-6"
+      className="border-t border-slate-300/60 dark:border-slate-300 py-8 px-6"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}

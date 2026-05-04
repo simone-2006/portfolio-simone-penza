@@ -36,7 +36,10 @@
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
-      "databaseDevops": "Database & DevOps"
+      "database": "Database",
+      "devops": "DevOps",
+      "tools": "Tools",
+      "aiTools": "AI Tools"
     }
   },
   "cv": {

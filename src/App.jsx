@@ -16,6 +16,12 @@ import { RiTailwindCssFill, RiSupabaseLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BsFiletypeJsx } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
+import { DiVisualstudio } from "react-icons/di";
+import { RiOpenaiFill } from "react-icons/ri";
+import { BsClaude } from "react-icons/bs";
+import { GoCopilot } from "react-icons/go";
+import { SiPostman } from "react-icons/si";
+
 import "flag-icons/css/flag-icons.min.css";
 
 import Header from "./components/Header";
@@ -26,7 +32,7 @@ import CV from "./components/CV.jsx";
 import Contatti from "./components/Contatti.jsx";
 import Footer from "./components/Footer.jsx";
 
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const SKILL_ICONS = {
   frontend: [
@@ -37,24 +43,45 @@ const SKILL_ICONS = {
       icon: <IoLogoJavascript size={15} />,
       color: "#F7DF1E",
     },
+    { name: "React", icon: <FaReact size={15} />, color: "#61DAFB" },
+    { name: "JSX", icon: <BsFiletypeJsx size={15} />, color: "#61DAFB" },
     {
       name: "Tailwind CSS",
       icon: <RiTailwindCssFill size={15} />,
       color: "#06B6D4",
     },
-    { name: "JSX", icon: <BsFiletypeJsx size={15} />, color: "#61DAFB" },
-    { name: "React", icon: <FaReact size={15} />, color: "#61DAFB" },
   ],
+
   backend: [
     { name: "Node.js", icon: <FaNodeJs size={15} />, color: "#339933" },
     { name: "PHP", icon: <FaPhp size={15} />, color: "#777BB4" },
     { name: "Python", icon: <FaPython size={15} />, color: "#3776AB" },
   ],
-  databaseDevops: [
+
+  database: [
     { name: "SQL", icon: <Database size={15} />, color: "lightgray" },
     { name: "Supabase", icon: <RiSupabaseLine size={15} />, color: "green" },
+  ],
+
+  devops: [
     { name: "Docker", icon: <FaDocker size={15} />, color: "#2496ED" },
     { name: "Git", icon: <FaGitAlt size={15} />, color: "#F05033" },
+    { name: "GitHub", icon: <FaGithub size={15} />, color: "#181717" },
+  ],
+
+  tools: [
+    {
+      name: "Visual Studio Code",
+      icon: <DiVisualstudio size={15} />,
+      color: "#007ACC",
+    },
+    { name: "Postman", icon: <SiPostman size={15} />, color: "#FF6C37" },
+  ],
+
+  aiTools: [
+    { name: "ChatGPT", icon: <RiOpenaiFill size={15} />, color: "#FFFFFF" },
+    { name: "Claude", icon: <BsClaude size={15} />, color: "#FF6600" },
+    { name: "GitHub Copilot", icon: <GoCopilot size={15} />, color: "#181717" },
   ],
 };
 
@@ -107,8 +134,20 @@ export default function Portfolio() {
       skills: SKILL_ICONS.backend,
     },
     {
-      label: t("skills.categories.databaseDevops"),
-      skills: SKILL_ICONS.databaseDevops,
+      label: t("skills.categories.database"),
+      skills: SKILL_ICONS.database,
+    },
+    {
+      label: t("skills.categories.devops"),
+      skills: SKILL_ICONS.devops,
+    },
+    {
+      label: t("skills.categories.tools"),
+      skills: SKILL_ICONS.tools,
+    },
+    {
+      label: t("skills.categories.aiTools"),
+      skills: SKILL_ICONS.aiTools,
     },
   ];
 
