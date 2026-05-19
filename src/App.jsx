@@ -12,6 +12,7 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
 import { RiTailwindCssFill, RiSupabaseLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BsFiletypeJsx } from "react-icons/bs";
@@ -21,9 +22,10 @@ import { RiOpenaiFill } from "react-icons/ri";
 import { BsClaude } from "react-icons/bs";
 import { GoCopilot } from "react-icons/go";
 import { SiPostman } from "react-icons/si";
+import { SiXampp } from "react-icons/si";
 
 import "flag-icons/css/flag-icons.min.css";
-
+import cursorIcon from "./assets/icons/cursor-icon.svg";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -60,13 +62,14 @@ const SKILL_ICONS = {
 
   database: [
     { name: "SQL", icon: <Database size={15} />, color: "lightgray" },
-    { name: "Supabase", icon: <RiSupabaseLine size={15} />, color: "green" },
+    { name: "MySQL", icon: <DiMysql size={15} />, color: "#2496ED" },
   ],
 
   devops: [
     { name: "Docker", icon: <FaDocker size={15} />, color: "#2496ED" },
     { name: "Git", icon: <FaGitAlt size={15} />, color: "#F05033" },
     { name: "GitHub", icon: <FaGithub size={15} />, color: "#181717" },
+    { name: "Xampp", icon: <SiXampp size={15} />, color: "#F37623" },
   ],
 
   tools: [
@@ -76,6 +79,8 @@ const SKILL_ICONS = {
       color: "#007ACC",
     },
     { name: "Postman", icon: <SiPostman size={15} />, color: "#FF6C37" },
+    { name: "Cursor", icon: <img src={cursorIcon} alt="Cursor" width={15} height={15} />, color: "#000000" },
+
   ],
 
   aiTools: [
